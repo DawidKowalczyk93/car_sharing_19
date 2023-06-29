@@ -44,7 +44,7 @@ html, body {
 .btn-secondary:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    border: .0625rem solid var(--primary-color-color);
+    border: .0625rem solid var(--primary-color);
 }
 
 .btn-outline {
@@ -130,9 +130,7 @@ html, body {
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     margin-top: -5.5rem;
     color: var(--secondary-color);
     text-align: center;
@@ -141,7 +139,22 @@ html, body {
 .intro .intro__box {
 
 }
-.intro .intro__box.intro__box--row {}
+
+.intro .intro__bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .intro__box.intro__box--row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
 .intro .intro__hdl {
     font-weight: 900;
     font-size: 5.625rem;
@@ -154,6 +167,8 @@ html, body {
     font-size: 1rem;
     max-width: 65.375rem;
     letter-spacing: 0;
+    margin-bottom: 3.375rem;
+    line-height: 1.375;
 
 }
 .intro .intro__btn {}
