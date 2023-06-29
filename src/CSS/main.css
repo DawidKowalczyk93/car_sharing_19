@@ -185,12 +185,13 @@ html, body {
     text-align: center;
     font-family: "Nunito Sans", sans-serif ;
     font-weight: 700;
+    text-transform: uppercase;
     font-size: 2.1875rem;
     position: relative;
     margin-bottom: 2.5625rem;
 }
 
-.section .section__hdl--secondary {
+.section .section__hdl.section__hdl--secondary {
     color: var(--secondary-color);
     margin-bottom: 4.6875rem;
 }
@@ -210,7 +211,6 @@ html, body {
 .section .section__hdl:before {
     margin-left: -.625rem;
     transform: translateY(-50%) translateX(-100%);
-
 }
 
 .section .section__hdl--ternary {
@@ -219,7 +219,7 @@ html, body {
     font-size: 1.1875rem;
     text-align: left;
     text-transform: uppercase;
-    color: grey;
+    color: rgb(106, 106, 106);
     margin-bottom: 1.25rem;
 }
 
@@ -268,6 +268,42 @@ html, body {
     margin-bottom: 1rem;
     margin-top: 0;
 }
+.inner.inner--narrow {
+    max-width: 56.5rem;
+}
+
+.inner.inner--narrow .section__col {
+    width: 50%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+}
+
+.contact-form button {
+    align-self: flex-end;
+}
+
+.contact-form .contact-form__group {
+    display: flex;
+    gap: .625rem;
+    align-items: flex-start;
+}
+
+.contact-form .contact-form__group .contact-form__checkbox {
+    order: -10;
+}
+
+.contact-form .contact-form__group label {
+    font-size: .625rem;
+    color: dimgrey;
+    line-height: 1.4;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    margin-top: -.15rem;
+}
 
 
-.box--dark {}
